@@ -6,12 +6,12 @@
 
  Output time in words 
 
- Import Hasmap & map libraries 
+ Import Hasmap into libraries 
 
  Create 3 arrays 
 
  Array 1 is used for hours 
- Array 2 is used for speacial words in minutes (11 - 15 in words)
+ Array 2 is used for speacial words in minutes (11 - 19 in words)
  Array 3 is for 10units 
 
  In order to determine if its am or pm the program sets pm as false then confirms if its true by evaulating if the input is greater than 12
