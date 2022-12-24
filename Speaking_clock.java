@@ -1,11 +1,10 @@
 package uk.co.wowcher;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class Main {
     static boolean isPM = false;
-    static Map<String, String> hoursInWords = new HashMap<String, String>() {{
+    static HashMap<String, String> hoursInWords = new HashMap<String, String>() {{
         put("1", "one");
         put("2", "two");
         put("3", "three");
@@ -20,14 +19,20 @@ public class Main {
         put("12", "twelve");
     }};
 
-    static Map<String, String> specialMinutesInWords = new HashMap<String, String>() {{
+    static HashMap<String, String> specialMinutesInWords = new HashMap<String, String>() {{
         put("11", "eleven");
         put("12", "twelve");
         put("13", "thirteen");
+        put("14", "thirteen");
         put("15", "fifteen");
+        put("16", "sixteen");
+        put("17", "seventeen");
+        put("18", "eighteen");
+        put("19", "nineteen");
+
     }};
 
-    static Map<String, String> minutesTensInWords = new HashMap<String, String>() {{
+    static HashMap<String, String> minutesTensInWords = new HashMap<String, String>() {{
         put("0", " o ");
         put("2", "twenty ");
         put("3", "thirty ");
@@ -54,7 +59,7 @@ public class Main {
     }
 
     public static String getUnitMinutes(String unitMinute, boolean isMinuteDoubleZero) {
-         return isMinuteDoubleZero ? " o'clock" : hoursInWords.get(unitMinute);
+         return isMinuteDoubleZero ? "'clock" : hoursInWords.get(unitMinute);
     }
 
     public static String getMinutes(String minutes) {
@@ -83,7 +88,7 @@ public class Main {
     public static String getTimeInWords(String time) {
         if (time.equals("12:00")) {
             return "midday";
-        } else if (time.equals("24:00")) {
+        } else if (time.equals("24:00")|| time.equals("00:00")) {
             return "midnight";
         }
         String[] splitTime = splitTime(time);
@@ -91,6 +96,10 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        System.out.println("It's " + getTimeInWords("13:00"));
+        System.out.println("It's " + getTimeInWords("11:11"));
+        System.out.println("It's " + getTimeInWords("24:00"));
+        System.out.println("It's " + getTimeInWords("15:12"));
+        System.out.println("It's " + getTimeInWords("7:30"));
+        System.out.println("It's " + getTimeInWords("13:21"));
     }
 }
