@@ -1,17 +1,21 @@
 # Wowcher
 
-# Output time in words 
+ Install Java 
 
-# Import Hasmap & map libraries 
+ Open Ide
 
-# Create 3 arrays 
+ Output time in words 
 
-# Array 1 is used for hours 
-# Array 2 is used for speacial words in minutes (11 - 15 in words)
-# Array 3 is for 10units 
+ Import Hasmap & map libraries 
 
-# In order to determine if its am or pm the program sets pm as false then confirms if its true by evaulating if the input is greater than 12
+ Create 3 arrays 
 
-# To determine time after 12pm, the program subtracts 12 from the inputed time
+ Array 1 is used for hours 
+ Array 2 is used for speacial words in minutes (11 - 15 in words)
+ Array 3 is for 10units 
 
-# Program outputs time inputed as well as printing "midday" and "midnight" 
+ In order to determine if its am or pm the program sets pm as false then confirms if its true by evaulating if the input is greater than 12
+
+ To determine time after 12pm, the program subtracts 12 from the inputed time
+
+ Program outputs time inputed as well as printing "midday" and "midnight" 
